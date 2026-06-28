@@ -1,0 +1,47 @@
+:root{
+--purpl-50: hsl(260, 100%, 95%);
+--purpl-300: hsl(264, 82%, 80%);
+--purpl-500: hsl(263, 55%, 52%);
+--white: hsl(0, 0%, 100%);
+--grey-100: hsl(214, 17%, 92%);
+--grey-200: hsl(0, 0%, 81%);
+--grey-400: hsl(224, 10%, 45%);
+--grey-500: hsl(217, 19%, 35%);
+--dark-blue: hsl(219, 29%, 14%);
+--black: hsl(0, 0%, 7%);
+}
+html{
+    font-size: 13px;
+    font-family: serif;
+    font-family: "Barlow Semi Condensed", sans-serif;
+
+    body{
+        display: flex;
+        flex-direction: column;
+        gap:0.5rem;
+        align-items: center;
+        .cont{
+            padding: 2em;
+            width:80%;
+            background-color: var(--grey-100);
+            justify-content: center;
+            .card.daniel{background-color: var(--purpl-500);color: var(--white);}
+            .card.jonathan{background-color: var(--grey-500);color: var(--white);}
+            .card.jeanette{background-color: var(--white);}
+            .card.patrick{background-color: var(--dark-blue);color: var(--white);}
+            .card.kira{background-color: var(--white);}
+            .card{
+                border-radius: 10px;
+                background-color: var(--grey-100);
+                padding: 2rem;;
+                .meta{border:solid;
+                    display: grid;
+                    grid-template-rows: repeat(2,auto);
+                    grid-template-columns: 1fr 2fr;
+                    img.avatar{border-radius:50%;grid-row: 1/span2;}
+                }
+
+            }
+        }
+    }
+}
